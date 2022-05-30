@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twik Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h1>hello</h1>
+        <div id="infoPannel" class="pannel">
+            <div class="pannel-top">
+                <img id="infoCancelBtn" class="btn-image-pannel" src="images/cancel.svg">
+                <img id="infoRefreshBtn" class="btn-image-pannel" src="images/refresh.svg">
+            </div>
+            <h1>info</h1>
+            <h4>Num of images: <span id="numOfImages" class="h4-span">0</span></h4>
+            <h4>Num of elements with position fixed: <span id="numOfFixed" class="h4-span">0</span></h4>
+            <button id="contactUsBtn">contact us</button>
+        </div>
+        <div id="contactUsPannel" class="pannel">
+            <div class="pannel-top">
+                <img id="contactUsCancelBtn" class="btn-image-pannel" src="images/cancel.svg">
+                <img id="contactUsBackBtn" class="btn-image-pannel" src="images/back.svg">
+            </div>
+            <h1>contact us</h1>
+            <form id="contactUsForm" name="contactUsForm" autocomplete="off">
+                <div id="formAlert"></div>
+                <div class="form-group-email">
+                    <h4 class="h4-required">Email <span id="emailNotValid" class="h4-not-valid"></h4>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div class="form-group-name">
+                    <h4 class="h4-required">Name <span id="nameNotValid" class="h4-not-valid"></span></h4>
+                    <input id="name" type="text" name="name" required>
+                </div>
+                <div class="form-group-message">
+                    <h4>Message</h4>
+                    <textarea id="message" type="text" name="message" form="contactUsForm"></textarea>
+                </div>
+
+                <lottie-player id="progress" class="lottie-player" src="https://assets2.lottiefiles.com/datafiles/bEYvzB8QfV3EM9a/data.json" speed="1" autoplay loop></lottie-player>
+                <input id="submitBtn" class="submit" type="submit" value="submit">
+            </form>
+        </div>
+
+        <div id="fab" class="fab">
+            <img class="fab-image" src="images/information.svg">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
